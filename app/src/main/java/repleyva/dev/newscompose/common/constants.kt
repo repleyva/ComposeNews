@@ -3,7 +3,7 @@ package repleyva.dev.newscompose.common
 // url
 const val API_KEY = "c122610c243d419fab021fda2ace3bf9"
 const val URL_BASE = "BaseUrl"
-const val URL_API = "https://newsapi.org/v2"
+const val URL_API = "https://newsapi.org/v2/"
 
 // constants
 const val ERROR = "error"
@@ -12,3 +12,6 @@ const val ERROR_KEY_INVALID = "apiKeyInvalid"
 
 // Response
 const val RESPONSE_200 = 200
+
+//Generics
+const val EMPTY_STRING = ""

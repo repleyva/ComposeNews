@@ -28,7 +28,7 @@ class NewsViewModel @Inject constructor(
     fun getTopHeadLines(): MutableLiveData<List<NewsEntity>> {
         viewModelScope.launch(Dispatchers.IO) {
             val news = newsRepository.getTopHeadLines("CO")
-            _news.value = news
+            _news.postValue(news)
         }
         return _news
     }

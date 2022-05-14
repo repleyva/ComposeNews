@@ -1,4 +1,4 @@
-package repleyva.dev.newscompose
+package repleyva.dev.newscompose.ui.flow.main
 
 import android.os.Bundle
 import androidx.activity.ComponentActivity

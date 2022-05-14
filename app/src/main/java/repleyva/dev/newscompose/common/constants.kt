@@ -9,3 +9,6 @@ const val URL_API = "https://newsapi.org/v2"
 const val ERROR = "error"
 const val ERROR_KEY_MISSING = "apiKeyMissing"
 const val ERROR_KEY_INVALID = "apiKeyInvalid"
+
+// Response
+const val RESPONSE_200 = 200

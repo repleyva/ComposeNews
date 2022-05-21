@@ -4,7 +4,9 @@ import androidx.compose.runtime.Composable
 import androidx.navigation.compose.NavHost
 import androidx.navigation.compose.composable
 import androidx.navigation.compose.rememberNavController
+import repleyva.dev.newscompose.common.EMPTY_STRING
 import repleyva.dev.newscompose.ui.flow.news.NewsScreen
+import repleyva.dev.newscompose.ui.flow.news_details.DetailScreen
 
 @Composable
 fun Navigations() {
@@ -19,7 +21,8 @@ fun Navigations() {
             }
         }
         composable("${Destinations.DETAIL_NEWS}/{newTitle}") {
-            // TODO: Navigation details
+            val search = it.arguments?.getString("newTitle") ?: EMPTY_STRING
+            DetailScreen(newsTitle = search) { navController.popBackStack() }
         }
     }
 }

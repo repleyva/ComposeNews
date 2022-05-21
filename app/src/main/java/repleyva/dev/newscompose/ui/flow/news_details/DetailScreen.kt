@@ -1,8 +1,6 @@
 package repleyva.dev.newscompose.ui.flow.news_details
 
-import android.content.Intent
 import android.graphics.Bitmap
-import android.net.Uri
 import android.view.ViewGroup
 import android.webkit.WebView
 import android.webkit.WebViewClient
